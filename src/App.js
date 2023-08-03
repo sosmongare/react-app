@@ -1,10 +1,15 @@
 
 import './App.css';
 
-function App(props) {
+// array destructuring
+const [firstCity, secondCity] = ["Mombasa","Nakuru","Nairobi","Kisumu"];
+
+console.log(firstCity);
+console.log(secondCity);
+function App({library}) {
   return (
     <div className="App">
-      <h1>Hello from {props.library}</h1>
+      <h1>Hello from {library}</h1>
     </div>
   );
 }
